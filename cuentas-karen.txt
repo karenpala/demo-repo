@@ -1,0 +1,153 @@
+USUARIO		:	karen.palacios
+CONTRASEÑA	:	Uif12345
+
+CORREO		:	karen.palacios@uif.gob.bo
+
+
+
+
+******************************************************************************************
+
+17/10/22
+- Revision la documentacion resoluciones, manual de Sugeto Obligado
+- Reunon sw induccion
+
+
+18/10/22
+-Revison de informes de anteriores sevidores sobre el sistema CARONTE
+-pruebas del actual sistema CARONTE aplicando el manual Manual del Sujeto Obligado
+Sistema de Registro de Datos de Sujetos Obligados – CARONTE V.1
+
+
+
+
+*****************************************************************************************
+https://lucid.app/lucidchart/c481a6b5-019d-4ad9-8734-bf3cf0913ddf/edit?invitationId=inv_e076044b-d467-4271-8690-b85ea837f0a9
+
+
+
+*****************************************************************************************
+
+Estimada Karen,
+IP:   172.17.0.79
+Nombre servidor SVR-PREPROSIREA\JUAN
+Usuario sa:
+contraseña: Password123
+para seguimiento de tablas exec ps_obtenerFuncionarioRegistroCertificadoTramiteBajaFuncionario 1194 -> se coloca el código de entidad
+
+nueva tabla ttramiteClasificacion es esa tabla se guarda los renovados.
+
+Saludos
+
+
+********************************************************************************************.
+
+GQCW3-J6TP6-8QJKV-7D296-FYG9G
+7XD2X-JWJ94-BCHBW-W9WXP-J2WPT
+7KRHD-2M9GV-HFQRF-H43HV-HTJDD
+
+
+
+
+**********************************************************************************************
+UIF - de otros paises
+
+UIFs:
+https://www.sbs.gob.pe/prevencion-de-lavado-activos/Sistema-de-Lucha-Contra-el-LA-FT/Politica-y-Plan-Nacional-contra-el-LA-FT/UIFs-pertenecientes-a-GAFILAT-y-Espana
+
+
+COLOMBIA:
+https://www.uiaf.gov.co/reportantes
+
+ARGENTINA:
+https://www.argentina.gob.ar/uif/sujetos-obligados
+
+
+Chile:
+https://www.uaf.cl/utilitarios/tramites.aspx
+https://www.uaf.cl/entidades_reportantes/registro.aspx
+
+https://www.uaf.cl/preguntas/index.aspx?id=3
+https://www.uaf.cl/preguntas/index.aspx?id=7
+
+
+Peru:
+https://www.sbs.gob.pe/prevencion-de-lavado-activos/Supervisados/Informacion-a-remitir-a-la-UIF
+https://www.sbs.gob.pe/prevencion-de-lavado-activos/Sujetos-Obligados/Relacion-de-Sujetos-Obligados
+https://www.sbs.gob.pe/prevencion-de-lavado-activos/Sujetos-Obligados/Baja-del-Sujeto-obligado
+
+España:
+https://www.sepblac.es/es/sobre-el-sepblac/unidad-de-inteligencia-financiera/
+
+
+
+
+
+
+
+
+
+*********************************************************
+GIT
+
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+
+
+git push origin master
+
+//<strong>username:password</strong>@github.com/<strong>username</strong>/<strong>repository_name</strong>.git
+
+
+******************************************************************************************************************
+select * from [dbSujetosObligados].[dbo].[tEntidadHistRenovados] WHERE [idEntidad] = 1480
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*********************************************************************************************************
+
+pg_dump.exe --host localhost --port 5432 --username "postgres" --role "postgres" --no-password  --format custom --blobs --encoding UTF8 --verbose --file "D:\KAREN\bd\liz.backup" "liz"
+
+
+Tarea				Función psql
+Cerrar conexión			\q
+Cambiar de Base de datos	\c __base_datos__
+Listar Bases de datos		\l
+Ver Definiciones		\d __table__
+Listar Schemas			\dn
+Listar funciones		\df
+Listar Vistas			\dv
+Ver código SLQ de la función	\df+ __function
+Pretty-format			\x
+
+
+********BACKUP BD POSTGRES **************************
+bin>pg_dump -U postgres -f D:\KAREN\bd\respaldo_CARONTE.sql CARONTE
+
+
+******** RESTORE BD POSTGRES **************************
+postgres=# create database mi_basededatos;
+
+postgres=# \q
+
+
+bin>psql -h localhost -p 5432 -U postgres -f D:\KAREN\bd\db-01.sql dump
+
+bin>psql -U postgres dump < D:\KAREN\bd\bd-01.sql
+
+****************************************************************************
+pg_dump -U postgres _logs --schema-only > logs_.log
+
