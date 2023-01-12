@@ -1,0 +1,371 @@
+USUARIO		:	karen.palacios
+CONTRASEÑA	:	Uif12345
+
+CORREO		:	karen.palacios@uif.gob.bo
+
+
+
+
+******************************************************************************************
+
+17/10/22
+- Revision la documentacion resoluciones, manual de Sugeto Obligado
+- Reunon sw induccion
+
+
+18/10/22
+-Revison de informes de anteriores sevidores sobre el sistema CARONTE
+-pruebas del actual sistema CARONTE aplicando el manual Manual del Sujeto Obligado
+Sistema de Registro de Datos de Sujetos Obligados – CARONTE V.1
+
+
+
+
+*****************************************************************************************
+https://lucid.app/lucidchart/c481a6b5-019d-4ad9-8734-bf3cf0913ddf/edit?invitationId=inv_e076044b-d467-4271-8690-b85ea837f0a9
+
+
+
+*****************************************************************************************
+
+Estimada Karen,
+IP:   172.17.0.79
+Nombre servidor SVR-PREPROSIREA\JUAN
+Usuario sa:
+contraseña: Password123
+para seguimiento de tablas exec ps_obtenerFuncionarioRegistroCertificadoTramiteBajaFuncionario 1194 -> se coloca el código de entidad
+
+nueva tabla ttramiteClasificacion es esa tabla se guarda los renovados.
+
+Saludos
+
+
+********************************************************************************************.
+
+GQCW3-J6TP6-8QJKV-7D296-FYG9G
+7XD2X-JWJ94-BCHBW-W9WXP-J2WPT
+7KRHD-2M9GV-HFQRF-H43HV-HTJDD
+
+
+
+
+**********************************************************************************************
+UIF - de otros paises
+
+UIFs:
+https://www.sbs.gob.pe/prevencion-de-lavado-activos/Sistema-de-Lucha-Contra-el-LA-FT/Politica-y-Plan-Nacional-contra-el-LA-FT/UIFs-pertenecientes-a-GAFILAT-y-Espana
+
+
+COLOMBIA:
+https://www.uiaf.gov.co/reportantes
+
+ARGENTINA:
+https://www.argentina.gob.ar/uif/sujetos-obligados
+
+
+Chile:
+https://www.uaf.cl/utilitarios/tramites.aspx
+https://www.uaf.cl/entidades_reportantes/registro.aspx
+
+https://www.uaf.cl/preguntas/index.aspx?id=3
+https://www.uaf.cl/preguntas/index.aspx?id=7
+
+
+Peru:
+https://www.sbs.gob.pe/prevencion-de-lavado-activos/Supervisados/Informacion-a-remitir-a-la-UIF
+https://www.sbs.gob.pe/prevencion-de-lavado-activos/Sujetos-Obligados/Relacion-de-Sujetos-Obligados
+https://www.sbs.gob.pe/prevencion-de-lavado-activos/Sujetos-Obligados/Baja-del-Sujeto-obligado
+
+España:
+https://www.sepblac.es/es/sobre-el-sepblac/unidad-de-inteligencia-financiera/
+
+HONDURAS:
+https://urmoprelaft.cnbs.gob.hn/videotutoriales-de-registro/
+
+
+
+
+
+
+
+
+*********************************************************
+GIT
+
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+
+
+git push origin master
+
+//<strong>username:password</strong>@github.com/<strong>username</strong>/<strong>repository_name</strong>.git
+
+
+******************************************************************************************************************
+select * from [dbSujetosObligados].[dbo].[tEntidadHistRenovados] WHERE [idEntidad] = 1480
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*********************************************************************************************************
+
+pg_dump.exe --host localhost --port 5432 --username "postgres" --role "postgres" --no-password  --format custom --blobs --encoding UTF8 --verbose --file "D:\KAREN\bd\liz.backup" "liz"
+
+
+Tarea				Función psql
+Cerrar conexión			\q
+Cambiar de Base de datos	\c __base_datos__
+Listar Bases de datos		\l
+Ver Definiciones		\d __table__
+Listar Schemas			\dn
+Listar funciones		\df
+Listar Vistas			\dv
+Ver código SLQ de la función	\df+ __function
+Pretty-format			\x
+
+
+********BACKUP BD POSTGRES **************************
+bin>pg_dump -U postgres -f D:\KAREN\bd\respaldo_CARONTE.sql CARONTE
+
+
+******** RESTORE BD POSTGRES **************************
+postgres=# create database mi_basededatos;
+
+postgres=# \q
+
+
+bin>psql -h localhost -p 5432 -U postgres -f D:\KAREN\bd\db-01.sql dump
+
+bin>psql -U postgres dump < D:\KAREN\bd\bd-01.sql
+
+****************************************************************************
+pg_dump -U postgres _logs --schema-only > logs_.log
+
+
+*********************************************************************************
+AGETIC:
+https://www.digital.gob.bo/2020/06/herramientas-digitales/
+
+	https://gitlab.softwarelibre.gob.bo/agetic/plantillas/plantillas-backend/-/tree/master
+
+	https://gitlab.softwarelibre.gob.bo/agetic/plantillas/plantillas-backend/activity
+
+
+https://test.agetic.gob.bo/documentacion/iop-servicios-notificaciones-v3/#api-Notificaciones_de_Tr_mites-cerrarNotificacion
+
+
+
+
+
+*********************************************************************************
+DEPARTAMENTOS, PROVINCIAS Y MUNICIPIOS DE BOLIVIA
+
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.bivica.org/files/municipios-Bolivia.pdf
+
+http://geo.gob.bo/portal/
+
+
+
+
+*****************************************************************************************
+OBTENER DICCIONARIO DE DATOS: postgres
+
+SELECT
+    t1.TABLE_NAME AS tabla_nombre,
+    t1.COLUMN_NAME AS columna_nombre,
+    t1.COLUMN_DEFAULT AS columna_defecto,
+    t1.IS_NULLABLE AS columna_nulo,
+    t1.DATA_TYPE AS columna_tipo_dato,
+    COALESCE(t1.NUMERIC_PRECISION,
+    t1.CHARACTER_MAXIMUM_LENGTH) AS columna_longitud,
+    PG_CATALOG.COL_DESCRIPTION(t2.OID,
+    t1.DTD_IDENTIFIER::int) AS columna_descripcion,
+    t1.DOMAIN_NAME AS columna_dominio
+FROM 
+    INFORMATION_SCHEMA.COLUMNS t1
+    INNER JOIN PG_CLASS t2 ON (t2.RELNAME = t1.TABLE_NAME)
+WHERE 
+    t1.TABLE_SCHEMA = 'public'
+ORDER BY
+    t1.TABLE_NAME;
+
+*************************************************************************************
+
+sql server:
+
+
+SELECT 
+	'DATADICTIONARY' AS [REPORT],
+	@@SERVERNAME AS [ServerName],
+	DB_NAME() AS [DatabaseName],
+	t.name AS [TableName], 
+	schema_name(t.schema_id) AS [SchemaName], 
+	c.name AS [ColumnName], 
+	st.name AS [DataType], 
+	c.max_length AS [MaxLength], 
+	CASE 
+		WHEN c.is_nullable = 0 THEN 'NO'
+		ELSE 'YES'
+	END AS [IsNull],
+	CASE 
+		WHEN c.is_identity = 0 THEN 'NO'
+		ELSE 'YES'
+	END AS [IsIdentity], 
+	isnull(ep.value, '-- add description here') AS [Description]
+FROM [sys].[tables] t
+INNER JOIN [sys].[columns] c
+	ON t.object_id= c.object_id 
+INNER JOIN [sys].[systypes] st 
+	ON c.system_type_id= st.xusertype 
+INNER JOIN [sys].[objects] o 
+	ON t.object_id= o.object_id 
+LEFT JOIN [sys].[extended_properties] ep 
+	ON o.object_id = ep.major_id 
+	AND c.column_Id = ep.minor_id
+WHERE t.name <> 'sysdiagrams' 
+ORDER BY 
+	t.name,
+	c.column_Id
+
+
+***************************************************************************************
+
+casasdecambio.capacitacion
+Uif12345
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*********************************************************************
+Migracion BD
+https://wiki.postgresql.org/wiki/Migraci%C3%B3n_de_Microsoft_SQL_Server_a_PostgreSQL_por_Ian_Harding
+
+
+
+************************************************************************
+
+DBCC LOGINFO
+
+
+SELECT
+  [Transaction ID], [Current LSN], [Transaction Name], [Operation],  [Context],[AllocUnitName],[Begin Time],[End Time], [Transaction SID],
+  [Num Elements] ,
+  [RowLog Contents 0],
+  [RowLog Contents 1],
+  [RowLog Contents 2],
+  [RowLog Contents 3]
+ FROM fn_dblog (NULL, NULL)
+ WHERE [Transaction ID] = (Select [Transaction ID] FROM fn_dblog (null,null) WHERE
+[Transaction Name] = 'INSERT')
+ GO
+
+
+
+
+
+
+***************************************************************************
+CMONFIGURACIONES DEL EQUIPO ANTES:
+
+JBOSS_HOME 	D:\wildfly-10.1.0.Final
+
+
+PATH 	
+
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;%JAVA_HOME%\bin;%JBOSS_HOME%\bin;C:\Program Files\TortoiseSVN\bin;C:\apache-maven-3.5.0\bin;C:\Program Files\Git\cmd
+
+
+************************************************************************
+JSF:
+http://www.jtech.ua.es/j2ee/publico/jsf-2012-13/sesion01-apuntes.html
+https://javaee.github.io/javaserverfaces-spec/
+
+https://javajhon.blogspot.com/2020/06/demo-jsf.html
+
+
+
+
+
+
+
+*****************************************************
+JWT
+https://www.youtube.com/watch?v=wYy8RNPtChM
+
+https://www.adam-bien.com/roller/abien/entry/json_web_token_generator_jwtenizr
+
+https://www.arquitecturajava.com/introduccion-a-json-web-token/
+
+https://javadesde0.com/json-web-tokens-jwt/
+
+
+https://www.adictosaltrabajo.com/2017/09/25/securizar-un-api-rest-utilizando-json-web-tokens/
+
+
+API REST
+https://www.youtube.com/watch?v=oYUcUf-KMio
+
+
+
+
+https://www.youtube.com/watch?v=OxcATuXsrb0
+
+
+SPRINT BOOT
+http://tutoriauxjee.blogspot.com/2019/10/spring-boot-jwtjson-web-token.html
+
+
+
+
+
+
+
+
+
+***********************************
+VISUAL STUDIO CODE
+https://code.visualstudio.com/updates/v1_53
+
+react JS
+https://www.youtube.com/watch?v=rLoWMU4L_qE
+
+Javascript para Aprender React
+https://www.youtube.com/watch?v=lVqHiTCIRQg
+
+
+SPRINT BOOT
+https://www.youtube.com/watch?v=CJppCHkC8n4
+https://www.youtube.com/watch?v=rzhLz2yptso
+
+fullsatack
+https://www.youtube.com/watch?v=7vHzVN0EiQc
