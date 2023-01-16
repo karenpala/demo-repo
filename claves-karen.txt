@@ -1,0 +1,20 @@
+https://id.atlassian.com/login?application=bitbucket&continue=https%3A%2F%2Fbitbucket.org%2Faccount%2Fsignin%2F%3Fnext%3D%252F%26redirectCount%3D1
+
+
+kortiz171819@gmail.com
+Karlos141516*
+
+
+
+
+
+
+
+git add -A
+git commit -m "pantallas modal de inicio"
+git push origin main
+
+
+
+
+git pull origin main
