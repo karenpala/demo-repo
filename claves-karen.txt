@@ -18,3 +18,14 @@ git push origin main
 
 
 git pull origin main
+
+
+
+
+bitBucker:
+kortiz171819@gmail.com
+Karlos123**
+
+gitHub:
+karenpala
+K4r3n1489

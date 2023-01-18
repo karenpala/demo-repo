@@ -1,0 +1,59 @@
+16758    16/02/2010
+
+TypeScript
+compilar:
+tsc funciones
+tsc -init
+tsc -w
+
+
+
+
+
+
+
+
+
+
+
+/******************************/
+{
+    "workbench.editor.enablePreview": false,
+    "files.autoSave": "afterDelay",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Flatland Monokai",
+    "editor.fontFamily": "Jetbrains Mono, Consolas, 'Courier New', monospace",
+    "editor.linkedEditing": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.language.colorizedBracketPairs": [
+    
+    ],
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.suggest.completeFunctionCalls": true,
+    "javascript.suggest.completeFunctionCalls": true,
+    "[javascript]":{
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.tabSize": 2,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        },
+    },
+    "editor.fontSize": 18,
+    "explorer.confirmDelete": false,
+    "git.enableSmartCommit": true,
+    "java.jdt.ls.java.home":"C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.17.8-hotspot",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.setting": true,
+        "**/factorypath": true
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.wordWrap": "on"
+}
+/*****************************************************************************/
